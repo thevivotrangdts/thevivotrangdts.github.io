@@ -134,11 +134,6 @@
     }, 1500, 'easeInOutExpo');
     return false;
   });
-  // Skills section
-  $('.skills-content').waypoint(function() {
-  }, {
-    offset: '80%'
-  });
   // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
