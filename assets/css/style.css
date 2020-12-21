@@ -7,7 +7,7 @@ a {
 }
 a:hover {
   color: #e58325;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 #topbar .contact-info a:hover {
-  text-decoration: underline;
+  text-decoration: none !important;
 }
 #topbar .contact-info i {
   padding-right: 4px;
@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
   color: #1d65a3;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .mobile-nav .drop-down > a:after {
   content: "\ea99";
@@ -569,7 +569,7 @@ section {
   line-height: 1;
 }
 #footer .footer-top .footer-links ul a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #1d65a3;
 }
 #footer .footer-top .social-links a {
@@ -589,7 +589,7 @@ section {
 #footer .footer-top .social-links a:hover {
   background: #e58325;
   color: #fff;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 #footer .copyright {
   text-align: center;
