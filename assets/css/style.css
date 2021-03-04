@@ -670,3 +670,22 @@ section {
   display: block;
   margin: 30px auto;
 }
+
+.content-jobs {
+  padding: 8px 20px;
+  margin: 0;
+}
+
+.content-jobs h2{
+  color: #1d65a3;
+  font-weight: bold;
+  padding: 20px 0px;
+  margin: 0;
+  text-align: center;
+}
+
+.content-jobs h4{
+  color: #1d65a3;
+  padding: 10px 0px;
+  margin: 0;
+}
