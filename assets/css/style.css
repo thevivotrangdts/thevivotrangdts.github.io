@@ -677,6 +677,11 @@ section {
   background: #f2f7fd;
   color: black;
   border-radius: 10px;
+  border: 2px solid #f2f7fd;
+}
+
+.content-jobs:hover {
+  border: 2px solid #c4dbf8;
 }
 
 .content-jobs h2{
