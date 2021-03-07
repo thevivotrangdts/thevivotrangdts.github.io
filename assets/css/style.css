@@ -672,16 +672,20 @@ section {
 }
 
 .content-jobs {
-  padding: 8px 20px;
-  margin: 0;
+  padding: 20px;
+  margin: 20px;
+  background: #f2f7fd;
+  color: black;
+  border-radius: 10px;
 }
 
 .content-jobs h2{
   color: #1d65a3;
   font-weight: bold;
-  padding: 20px 0px;
+  padding: 10px 0px;
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .content-jobs h4{
