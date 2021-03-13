@@ -698,3 +698,21 @@ section {
   padding: 10px 0px;
   margin: 0;
 }
+
+.content-jobs table, th, td {
+  border: 2px solid #02447e;
+  border-collapse: collapse;
+  padding: 5px
+}
+
+.content-jobs th{
+  background: #02447e;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content-jobs td{
+  background: #ffffff;
+  text-align: center;
+}
