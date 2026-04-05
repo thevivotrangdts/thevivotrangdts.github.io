@@ -1,0 +1,92 @@
+{{- $lang     := .Lang }}
+{{- $c        := .Site.Data.contact }}
+{{- $services := .Site.Data.services }}
+
+{{- $homeHref  := cond (eq $lang "en") "/en/index.html"  "/index.html" }}
+{{- $aboutHref := cond (eq $lang "en") "/en/about.html"  "/about.html" }}
+{{- $svcHref   := cond (eq $lang "en") "/en/index.html#featured-services" "/index.html#featured-services" }}
+
+{{- if eq $lang "en" }}
+  {{- $usefulLinksLabel := "Useful Links" }}
+  {{- $ourServicesLabel := "Our Services" }}
+  {{- $socialLabel      := "Social Media" }}
+  {{- $followText       := "Follow us to get the newest updates." }}
+  {{- $homeLabel        := "Home" }}
+  {{- $aboutLabel       := "About" }}
+  {{- $svcLabel         := "Services" }}
+  {{- $addr             := $c.address.en }}
+{{- end }}
+
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3><span>Ground Data </span>Technology Solutions</h3>
+          <p>
+            {{- if eq $lang "en" }}
+            {{ $c.address.en | safeHTML }}<br><br>
+            {{- else }}
+            {{ $c.address.vi | safeHTML }}<br><br>
+            {{- end }}
+            <strong>Phone:</strong> <a href="tel:+{{ $c.phoneRaw }}">{{ $c.phone }}</a><br>
+            <strong>Email:</strong> <a href="mailto:{{ $c.email }}">{{ $c.email }}</a>
+          </p>
+        </div>
+
+        <!-- Useful links -->
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>{{ if eq $lang "en" }}Useful Links{{ else }}Đường dẫn{{ end }}</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i>
+              <a href="{{ $homeHref }}">{{ if eq $lang "en" }}Home{{ else }}Trang chủ{{ end }}</a>
+            </li>
+            <li><i class="bx bx-chevron-right"></i>
+              <a href="{{ $aboutHref }}">{{ if eq $lang "en" }}About{{ else }}Giới thiệu{{ end }}</a>
+            </li>
+            <li><i class="bx bx-chevron-right"></i>
+              <a href="{{ $svcHref }}">{{ if eq $lang "en" }}Services{{ else }}Dịch vụ{{ end }}</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>{{ if eq $lang "en" }}Our Services{{ else }}Dịch vụ của chúng tôi{{ end }}</h4>
+          <ul>
+            {{- range $services }}
+            {{- $svcData := cond (eq $lang "en") .en .vi }}
+            {{- $svcPath := cond (eq $lang "en") (printf "/en/services/%s.html" .en.slug) (printf "/dich-vu/%s.html" .vi.slug) }}
+            <li>
+              <i class="bx bx-chevron-right"></i>
+              <a href="{{ $svcPath }}">{{ $svcData.label }}</a>
+            </li>
+            {{- end }}
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>{{ if eq $lang "en" }}Social Media{{ else }}Mạng xã hội{{ end }}</h4>
+          <p>
+            {{- if eq $lang "en" }}Follow us to get the newest updates.
+            {{- else }}Hãy theo dõi chúng tôi tại mạng xã hội để cập nhật những thông tin mới nhất.{{ end }}
+          </p>
+          <div class="social-links mt-3">
+            <a href="{{ $c.social.facebook }}" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="{{ $c.social.linkedin }}" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>GDTS</span></strong>. All Rights Reserved
+    </div>
+  </div>
+</footer><!-- End Footer -->

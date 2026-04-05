@@ -1,0 +1,103 @@
+{{ define "title" }}{{ if eq .Lang "en" }}Homepage{{ else }}Trang chủ{{ end }} - Ground Data Technology Solutions{{ end }}
+
+{{ define "head-extra" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://gdts.vn",
+  "logo": "https://gdts.vn/assets/img/gdts.png"
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+{{- $lang     := .Lang }}
+{{- $services := .Site.Data.services }}
+{{- $c        := .Site.Data.contact }}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    {{ if eq $lang "en" }}
+    <h1>Welcome to <span>GDTS</span></h1>
+    <h2>We provide solutions for field data collection and geospatial data processing.</h2>
+    <div class="d-flex">
+      <a href="#featured-services" class="btn-get-started scrollto">Detail</a>
+    </div>
+    {{ else }}
+    <h1>Chào mừng đến với <span>GDTS</span></h1>
+    <h2>Chúng tôi chuyên cung cấp các giải pháp thu thập và xử lý dữ liệu địa không gian thuộc nhiều lĩnh vực.</h2>
+    <div class="d-flex">
+      <a href="#featured-services" class="btn-get-started scrollto">Chi tiết</a>
+    </div>
+    {{ end }}
+  </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+  <!-- ======= Featured Services Section ======= -->
+  <section id="featured-services" class="featured-services">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        {{- range $i, $svc := $services }}
+        {{- $svcData := cond (eq $lang "en") $svc.en $svc.vi }}
+        {{- $svcPath := cond (eq $lang "en") (printf "/en/services/%s.html" $svc.en.slug) (printf "/dich-vu/%s.html" $svc.vi.slug) }}
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="{{ mul (add $i 1) 100 }}">
+            <div class="icon"><i class="{{ $svc.icon }}"></i></div>
+            <h2 class="title"><a href="{{ $svcPath }}">{{ $svcData.label }}</a></h2>
+            <p class="description">{{ $svcData.description }}</p>
+          </div>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </section><!-- End Featured Services Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        {{ if eq $lang "en" }}
+        <h2>Contact</h2>
+        <h3><span>Contact Us</span></h3>
+        <p>For further information, please contact us via the methods below.</p>
+        {{ else }}
+        <h2>Thông tin liên hệ</h2>
+        <h3><span>Hãy liên hệ chúng tôi</span></h3>
+        <p>Để được giải đáp thắc mắc một cách tường tận nhất, xin liên hệ với chúng tôi theo các phương thức sau.</p>
+        {{ end }}
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-6">
+          <div class="info-box mb-4">
+            <i class="bx bx-map"></i>
+            <h3>{{ if eq $lang "en" }}Address{{ else }}Địa chỉ{{ end }}</h3>
+            <p>{{ if eq $lang "en" }}Floor 12, Viettel Office, 285 Cach mang Thang Tam Street, District 10, HCMC{{ else }}Tầng 12, Viettel Office, 285 Cách mạng tháng 8, Quận 10, TP.HCM{{ end }}</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box mb-4">
+            <i class="bx bx-envelope"></i>
+            <h3>Email</h3>
+            <p>{{ $c.email }}</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="info-box mb-4">
+            <i class="bx bx-phone-call"></i>
+            <h3>{{ if eq $lang "en" }}Phone{{ else }}Số điện thoại{{ end }}</h3>
+            <p>{{ $c.phone }}</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+{{ end }}

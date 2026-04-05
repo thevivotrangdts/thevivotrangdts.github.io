@@ -1,0 +1,78 @@
+{{- $lang     := .Lang }}
+{{- $navId    := .Params.navId | default "" }}
+{{- $isHome   := .IsHome }}
+{{- $services := .Site.Data.services }}
+
+{{- $homeHref    := cond (eq $lang "en") "/en/index.html"  "/index.html" }}
+{{- $aboutHref   := cond (eq $lang "en") "/en/about.html"  "/about.html" }}
+{{- $svcHref     := cond (eq $lang "en") "/en/index.html#featured-services" "/index.html#featured-services" }}
+{{- $jobsHref    := cond (eq $lang "en") "/en/jobs.html"   "/jobs.html" }}
+{{- $contactHref := cond (eq $lang "en") "/en/index.html#contact" "/index.html#contact" }}
+
+{{- $homeLabel    := cond (eq $lang "en") "Home"        "Trang chủ" }}
+{{- $aboutLabel   := cond (eq $lang "en") "About"       "Giới thiệu" }}
+{{- $svcLabel     := cond (eq $lang "en") "Services"    "Dịch vụ" }}
+{{- $jobsLabel    := cond (eq $lang "en") "Recruitment" "Tuyển dụng" }}
+{{- $contactLabel := cond (eq $lang "en") "Contact"     "Liên hệ" }}
+
+{{- $svcSection := cond (eq $lang "en") "services" "dich-vu" }}
+
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+
+    <h1 class="logo mr-auto">
+      <a href="{{ $homeHref }}">
+        <img src="/assets/img/logo/gdts_symbol.svg" alt="GDTS" width="40" height="40">
+        &nbsp;&nbsp;
+        <img src="/assets/img/logo/gdts_text.svg" alt="Ground Data Technology Solutions" width="130" height="40">
+      </a>
+    </h1>
+
+    <nav class="nav-menu d-none d-lg-block">
+      <ul>
+
+        <li{{ if $isHome }} class="active"{{ end }}>
+          <a href="{{ $homeHref }}">{{ $homeLabel }}</a>
+        </li>
+
+        <li{{ if eq $navId "about" }} class="active"{{ end }}>
+          <a href="{{ $aboutHref }}">{{ $aboutLabel }}</a>
+        </li>
+
+        <li class="drop-down{{ if eq .Section $svcSection }} active{{ end }}">
+          <a href="{{ $svcHref }}">{{ $svcLabel }}</a>
+          <ul>
+            {{- range $services }}
+            {{- $svcData := cond (eq $lang "en") .en .vi }}
+            {{- $svcPath := cond (eq $lang "en") (printf "/en/services/%s.html" .en.slug) (printf "/dich-vu/%s.html" .vi.slug) }}
+            <li><a href="{{ $svcPath }}">{{ $svcData.label }}</a></li>
+            {{- end }}
+          </ul>
+        </li>
+
+        <li{{ if eq $navId "jobs" }} class="active"{{ end }}>
+          <a href="{{ $jobsHref }}">{{ $jobsLabel }}</a>
+        </li>
+
+        <li>
+          <a href="{{ $contactHref }}">{{ $contactLabel }}</a>
+        </li>
+
+        <!-- Language switcher -->
+        {{- range .Translations }}
+        <li>
+          <a href="{{ .Permalink }}">
+            {{- if eq .Lang "en" }}
+            <img src="/assets/img/united-states-of-america.png" width="25" height="25" alt="English Version">
+            {{- else }}
+            <img src="/assets/img/vietnam.png" width="25" height="25" alt="Vietnamese Version">
+            {{- end }}
+          </a>
+        </li>
+        {{- end }}
+
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </div>
+</header><!-- End Header -->

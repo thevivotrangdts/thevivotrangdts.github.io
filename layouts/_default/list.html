@@ -1,0 +1,41 @@
+{{/* Section list page — e.g. /dich-vu/, /en/services/ */}}
+{{ define "main" }}
+{{- $lang     := .Lang }}
+{{- $services := .Site.Data.services }}
+{{- $homeHref := cond (eq $lang "en") "/en/index.html" "/index.html" }}
+{{- $homeLabel := cond (eq $lang "en") "Home" "Trang chủ" }}
+
+<main id="main" data-aos="fade-up">
+
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>{{ .Title }}</h2>
+        <ol>
+          <li><a href="{{ $homeHref }}">{{ $homeLabel }}</a></li>
+          <li>{{ .Title }}</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-services" style="padding: 60px 0;">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        {{- range $i, $svc := $services }}
+        {{- $svcData := cond (eq $lang "en") $svc.en $svc.vi }}
+        {{- $svcPath := cond (eq $lang "en") (printf "/en/services/%s.html" $svc.en.slug) (printf "/dich-vu/%s.html" $svc.vi.slug) }}
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="{{ mul (add $i 1) 100 }}">
+            <div class="icon"><i class="{{ $svc.icon }}"></i></div>
+            <h2 class="title"><a href="{{ $svcPath }}">{{ $svcData.label }}</a></h2>
+            <p class="description">{{ $svcData.description }}</p>
+          </div>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </section>
+
+</main>
+{{ end }}

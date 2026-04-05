@@ -1,0 +1,69 @@
+# ─────────────────────────────────────────────────────────────────
+# Services list — single source of truth.
+#
+# TO ADD A NEW SERVICE:
+#   1. Add an entry here (id, icon, vi, en).
+#   2. Create content/vi/dich-vu/<slug>.md
+#   3. Create content/en/services/<slug>.md
+#   Done — nav dropdown, footer, and homepage grid update automatically.
+# ─────────────────────────────────────────────────────────────────
+
+- id: carbon-coffee
+  icon: bx bx-certification
+  translationKey: carbon-coffee
+  vi:
+    label: Gán nhãn Carbon Cà phê
+    slug: giai-phap-gan-nhan-carbon-ca-phe
+    description: Đo lường, minh bạch hóa và gán nhãn carbon footprint cho cà phê xuất khẩu, đáp ứng tiêu chuẩn ESG, CBAM
+  en:
+    label: Coffee Carbon Labeling
+    slug: carbon-labeling-coffee
+    description: Measure and label carbon footprint for export coffee, meeting ESG and CBAM standards
+
+- id: ground-data
+  icon: bx bx-map
+  translationKey: ground-data
+  vi:
+    label: Thu thập dữ liệu mặt đất
+    slug: thu-thap-du-lieu-mat-dat
+    description: Thu thập thông tin thực địa phục vụ mục đích phát triển kinh doanh, quản lý đô thị
+  en:
+    label: Ground Data Collection
+    slug: ground-data-collection
+    description: Collect field data for developing business and urban management purposes
+
+- id: scientific-data
+  icon: bx bx-bong
+  translationKey: scientific-data
+  vi:
+    label: Thu thập dữ liệu khoa học
+    slug: thu-thap-du-lieu-khoa-hoc
+    description: Thu thập dữ liệu trên không, mặt đất và dưới mặt đất phục vụ công tác nghiên cứu
+  en:
+    label: Scientific Data Collection
+    slug: scientific-data-collection
+    description: Collect aerial, ground and underground data for research work
+
+- id: agricultural-data
+  icon: bx bx-cloud
+  translationKey: agricultural-data
+  vi:
+    label: Thu thập dữ liệu nông nghiệp
+    slug: thu-thap-du-lieu-nong-nghiep
+    description: Thu thập dữ liệu trong nông nghiệp bằng thiết bị bay không người lái
+  en:
+    label: Agricultural Data Collection
+    slug: agricultural-data-collection
+    description: Collect agricultural data using drones
+
+- id: geospatial
+  icon: bx bx-world
+  translationKey: geospatial
+  vi:
+    label: Xử lý dữ liệu địa không gian
+    slug: xu-ly-du-lieu-dia-khong-gian
+    description: Cung cấp các giải pháp xử lý dữ liệu và hỗ trợ ra quyết định dựa trên dữ liệu địa không gian
+  en:
+    label: Geospatial Data Analyze
+    slug: geospatial-data-analyze
+    description: Provides data processing solutions and supports decision making based on geospatial data
