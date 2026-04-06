@@ -13,8 +13,8 @@
 
 {{ define "main" }}
 {{- $lang     := .Lang }}
-{{- $services := .Site.Data.services }}
-{{- $c        := .Site.Data.contact }}
+{{- $services := hugo.Data.services }}
+{{- $c        := hugo.Data.contact }}
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex align-items-center">

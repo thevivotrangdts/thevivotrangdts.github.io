@@ -1,6 +1,6 @@
 {{- $lang     := .Lang }}
-{{- $c        := .Site.Data.contact }}
-{{- $services := .Site.Data.services }}
+{{- $c        := hugo.Data.contact }}
+{{- $services := hugo.Data.services }}
 
 {{- $homeHref  := cond (eq $lang "en") "/en/index.html"  "/index.html" }}
 {{- $aboutHref := cond (eq $lang "en") "/en/about.html"  "/about.html" }}

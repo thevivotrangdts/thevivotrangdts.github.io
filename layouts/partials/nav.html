@@ -1,7 +1,8 @@
 {{- $lang     := .Lang }}
 {{- $navId    := .Params.navId | default "" }}
 {{- $isHome   := .IsHome }}
-{{- $services := .Site.Data.services }}
+{{- $services := hugo.Data.services }}
+{{- $articles := hugo.Data.articles }}
 
 {{- $homeHref    := cond (eq $lang "en") "/en/index.html"  "/index.html" }}
 {{- $aboutHref   := cond (eq $lang "en") "/en/about.html"  "/about.html" }}
@@ -12,10 +13,12 @@
 {{- $homeLabel    := cond (eq $lang "en") "Home"        "Trang chủ" }}
 {{- $aboutLabel   := cond (eq $lang "en") "About"       "Giới thiệu" }}
 {{- $svcLabel     := cond (eq $lang "en") "Services"    "Dịch vụ" }}
+{{- $artLabel     := cond (eq $lang "en") "Articles"    "Bài viết" }}
 {{- $jobsLabel    := cond (eq $lang "en") "Recruitment" "Tuyển dụng" }}
 {{- $contactLabel := cond (eq $lang "en") "Contact"     "Liên hệ" }}
 
 {{- $svcSection := cond (eq $lang "en") "services" "dich-vu" }}
+{{- $artSection := cond (eq $lang "en") "articles" "bai-viet" }}
 
 <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center">
@@ -46,6 +49,17 @@
             {{- $svcData := cond (eq $lang "en") .en .vi }}
             {{- $svcPath := cond (eq $lang "en") (printf "/en/services/%s.html" .en.slug) (printf "/dich-vu/%s.html" .vi.slug) }}
             <li><a href="{{ $svcPath }}">{{ $svcData.label }}</a></li>
+            {{- end }}
+          </ul>
+        </li>
+
+        <li class="drop-down{{ if eq .Section $artSection }} active{{ end }}">
+          <a href="#">{{ $artLabel }}</a>
+          <ul>
+            {{- range $articles }}
+            {{- $artData := cond (eq $lang "en") .en .vi }}
+            {{- $artPath := cond (eq $lang "en") (printf "/en/articles/%s.html" .en.slug) (printf "/bai-viet/%s.html" .vi.slug) }}
+            <li><a href="{{ $artPath }}">{{ $artData.label }}</a></li>
             {{- end }}
           </ul>
         </li>

@@ -1,7 +1,7 @@
 {{/* Section list page — e.g. /dich-vu/, /en/services/ */}}
 {{ define "main" }}
 {{- $lang     := .Lang }}
-{{- $services := .Site.Data.services }}
+{{- $services := hugo.Data.services }}
 {{- $homeHref := cond (eq $lang "en") "/en/index.html" "/index.html" }}
 {{- $homeLabel := cond (eq $lang "en") "Home" "Trang chủ" }}
 

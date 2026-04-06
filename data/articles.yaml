@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────────
+# Articles list — single source of truth.
+#
+# TO ADD A NEW ARTICLE:
+#   1. Add an entry here (id, translationKey, vi, en).
+#   2. Create content/vi/bai-viet/<slug>.md
+#   3. Create content/en/articles/<slug>.md
+#   Done — nav dropdown updates automatically.
+# ─────────────────────────────────────────────────────────────────
+
+- id: carbon-footprint-education
+  translationKey: article-carbon-footprint-education
+  vi:
+    label: Dấu chân carbon là gì?
+    slug: dau-chan-carbon-la-gi-ca-phe-viet-nam
+  en:
+    label: What is a Carbon Footprint?
+    slug: what-is-carbon-footprint-vietnam-coffee
+
+- id: carbon-label-challenges
+  translationKey: article-carbon-label-challenges
+  vi:
+    label: Khó khăn khi triển khai nhãn carbon cho cà phê
+    slug: kho-khan-trien-khai-nhan-carbon-ca-phe
+  en:
+    label: Coffee Carbon Label Challenges
+    slug: coffee-carbon-label-challenges
+
+- id: traceability-trends
+  translationKey: article-traceability-trends
+  vi:
+    label: Truy xuất nguồn gốc và nhãn carbon cà phê
+    slug: truy-xuat-nguon-goc-nhan-carbon-ca-phe
+  en:
+    label: Traceability and Carbon Labels for Coffee
+    slug: traceability-carbon-labels-coffee
