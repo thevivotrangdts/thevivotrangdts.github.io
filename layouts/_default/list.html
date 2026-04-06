@@ -1,9 +1,11 @@
-{{/* Section list page — e.g. /dich-vu/, /en/services/ */}}
+{{/* Section list page — /dich-vu/, /en/services/, /bai-viet/, /en/articles/ */}}
 {{ define "main" }}
-{{- $lang     := .Lang }}
-{{- $services := hugo.Data.services }}
-{{- $homeHref := cond (eq $lang "en") "/en/index.html" "/index.html" }}
+{{- $lang      := .Lang }}
+{{- $services  := hugo.Data.services }}
+{{- $articles  := hugo.Data.articles }}
+{{- $homeHref  := cond (eq $lang "en") "/en/index.html" "/index.html" }}
 {{- $homeLabel := cond (eq $lang "en") "Home" "Trang chủ" }}
+{{- $isArticles := or (eq .Section "bai-viet") (eq .Section "articles") }}
 
 <main id="main" data-aos="fade-up">
 
@@ -19,6 +21,29 @@
     </div>
   </section>
 
+  {{- if $isArticles }}
+  <section class="featured-services" style="padding: 60px 0;">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        {{- range $articles }}
+        {{- $artData := cond (eq $lang "en") .en .vi }}
+        {{- $artPath := cond (eq $lang "en") (printf "/en/articles/%s.html" .en.slug) (printf "/bai-viet/%s.html" .vi.slug) }}
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5">
+          <div class="icon-box" data-aos="fade-up">
+            {{- if .image }}
+            <img src="{{ .image }}" alt="{{ $artData.label }}" style="width:100%; margin-bottom:15px; border-radius:4px; object-fit:cover; height:200px;">
+            {{- end }}
+            <h4 class="title"><a href="{{ $artPath }}">{{ $artData.label }}</a></h4>
+            <p class="description">{{ $artData.description }}</p>
+            <a href="{{ $artPath }}" style="margin-top:10px; display:inline-block;">{{ if eq $lang "en" }}Read more &raquo;{{ else }}Đọc thêm &raquo;{{ end }}</a>
+          </div>
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </section>
+
+  {{- else }}
   <section class="featured-services" style="padding: 60px 0;">
     <div class="container" data-aos="fade-up">
       <div class="row">
@@ -36,6 +61,7 @@
       </div>
     </div>
   </section>
+  {{- end }}
 
 </main>
 {{ end }}

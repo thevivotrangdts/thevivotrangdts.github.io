@@ -18,6 +18,8 @@ navId: "articles"
 
 <div class="content">
 
+<img src="/assets/img/product/giai-phap-gan-nhan-carbon-ca-phe/carbon-label-coffee-3.png" alt="Traceability and carbon labels for exported coffee" class="responsive" style="max-width: 800px; width: 100%; display: block; margin: 0 auto 24px;">
+
 <p>The global coffee industry is rapidly shifting toward transparency and sustainability. <strong>Traceability and carbon labels</strong> are becoming two inseparable elements, especially for premium markets.</p>
 
 <p>Buyers are not only interested in product quality but also want to know where the coffee was grown, how it was produced, and what its environmental emission levels are. This forces businesses to invest in data systems and technology.</p>

@@ -19,6 +19,7 @@
 
 {{- $svcSection := cond (eq $lang "en") "services" "dich-vu" }}
 {{- $artSection := cond (eq $lang "en") "articles" "bai-viet" }}
+{{- $artHref    := cond (eq $lang "en") "/en/articles/index.html" "/bai-viet/index.html" }}
 
 <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center">
@@ -53,15 +54,8 @@
           </ul>
         </li>
 
-        <li class="drop-down{{ if eq .Section $artSection }} active{{ end }}">
-          <a href="#">{{ $artLabel }}</a>
-          <ul>
-            {{- range $articles }}
-            {{- $artData := cond (eq $lang "en") .en .vi }}
-            {{- $artPath := cond (eq $lang "en") (printf "/en/articles/%s.html" .en.slug) (printf "/bai-viet/%s.html" .vi.slug) }}
-            <li><a href="{{ $artPath }}">{{ $artData.label }}</a></li>
-            {{- end }}
-          </ul>
+        <li{{ if or (eq .Section $artSection) (eq $navId "articles") }} class="active"{{ end }}>
+          <a href="{{ $artHref }}">{{ $artLabel }}</a>
         </li>
 
         <li{{ if eq $navId "jobs" }} class="active"{{ end }}>

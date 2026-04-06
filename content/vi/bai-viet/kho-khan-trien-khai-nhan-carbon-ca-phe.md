@@ -18,6 +18,8 @@ navId: "articles"
 
 <div class="content">
 
+<img src="/assets/img/product/giai-phap-gan-nhan-carbon-ca-phe/carbon-label-coffee-2.png" alt="Khó khăn khi triển khai nhãn carbon cho cà phê" class="responsive" style="max-width: 800px; width: 100%; display: block; margin: 0 auto 24px;">
+
 <p>Mặc dù nhu cầu về <strong>nhãn carbon cho cà phê xuất khẩu</strong> ngày càng tăng, nhưng việc triển khai trong thực tế vẫn gặp nhiều rào cản, đặc biệt với doanh nghiệp vừa và nhỏ.</p>
 
 <p>Thách thức đầu tiên là <strong>thiếu dữ liệu đầu vào</strong>. Phần lớn vùng nguyên liệu chưa được số hóa, thông tin canh tác còn rời rạc, khiến việc thu thập dữ liệu phát thải trở nên tốn kém và thiếu chính xác.</p>

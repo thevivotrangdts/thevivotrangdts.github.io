@@ -18,6 +18,8 @@ navId: "articles"
 
 <div class="content">
 
+<img src="/assets/img/product/giai-phap-gan-nhan-carbon-ca-phe/carbon-label-coffee-1.png" alt="Carbon footprint for Vietnam's coffee industry" class="responsive" style="max-width: 800px; width: 100%; display: block; margin: 0 auto 24px;">
+
 <p>In recent years, the concept of <strong>carbon footprint</strong> has been increasingly mentioned in international trade. This is an index that measures the total greenhouse gas emissions throughout a product's entire lifecycle – from production and processing to transportation and consumption.</p>
 
 <p>For Vietnam's coffee industry, carbon footprint is no longer a distant concept but is becoming a real requirement. Major markets such as Europe and North America increasingly favor products with transparent environmental information, especially in the context where policies like <strong>CBAM</strong> and ESG standards are widely applied.</p>

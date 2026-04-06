@@ -18,6 +18,8 @@ navId: "articles"
 
 <div class="content">
 
+<img src="/assets/img/product/giai-phap-gan-nhan-carbon-ca-phe/carbon-label-coffee-2.png" alt="Challenges in implementing coffee carbon labels" class="responsive" style="max-width: 800px; width: 100%; display: block; margin: 0 auto 24px;">
+
 <p>Although demand for <strong>carbon labels for exported coffee</strong> is growing, practical implementation still faces many barriers, especially for small and medium enterprises.</p>
 
 <p>The first challenge is <strong>lack of input data</strong>. Most raw material areas have not been digitized, farming information is fragmented, making emission data collection costly and inaccurate.</p>

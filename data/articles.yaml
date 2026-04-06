@@ -2,35 +2,44 @@
 # Articles list — single source of truth.
 #
 # TO ADD A NEW ARTICLE:
-#   1. Add an entry here (id, translationKey, vi, en).
+#   1. Add an entry here (id, translationKey, image, vi, en).
 #   2. Create content/vi/bai-viet/<slug>.md
 #   3. Create content/en/articles/<slug>.md
-#   Done — nav dropdown updates automatically.
+#   Done — nav link and articles list page update automatically.
 # ─────────────────────────────────────────────────────────────────
 
 - id: carbon-footprint-education
   translationKey: article-carbon-footprint-education
+  image: /assets/img/product/giai-phap-gan-nhan-carbon-ca-phe/carbon-label-coffee-1.png
   vi:
     label: Dấu chân carbon là gì?
     slug: dau-chan-carbon-la-gi-ca-phe-viet-nam
+    description: Tìm hiểu về dấu chân carbon và lý do ngành cà phê Việt Nam cần đo lường phát thải để đáp ứng yêu cầu CBAM và ESG.
   en:
     label: What is a Carbon Footprint?
     slug: what-is-carbon-footprint-vietnam-coffee
+    description: Learn about carbon footprint and why Vietnam's coffee industry needs to measure emissions to meet CBAM and ESG requirements.
 
 - id: carbon-label-challenges
   translationKey: article-carbon-label-challenges
+  image: /assets/img/product/giai-phap-gan-nhan-carbon-ca-phe/carbon-label-coffee-2.png
   vi:
     label: Khó khăn khi triển khai nhãn carbon cho cà phê
     slug: kho-khan-trien-khai-nhan-carbon-ca-phe
+    description: Các rào cản chính mà doanh nghiệp cà phê vừa và nhỏ gặp phải khi triển khai nhãn carbon xuất khẩu.
   en:
     label: Coffee Carbon Label Challenges
     slug: coffee-carbon-label-challenges
+    description: Key barriers that small and medium coffee businesses face when implementing carbon labels for export markets.
 
 - id: traceability-trends
   translationKey: article-traceability-trends
+  image: /assets/img/product/giai-phap-gan-nhan-carbon-ca-phe/carbon-label-coffee-3.png
   vi:
     label: Truy xuất nguồn gốc và nhãn carbon cà phê
     slug: truy-xuat-nguon-goc-nhan-carbon-ca-phe
+    description: Truy xuất nguồn gốc và nhãn carbon đang trở thành xu hướng tất yếu — tìm hiểu vai trò của GIS và mã QR trong chuỗi cung ứng bền vững.
   en:
     label: Traceability and Carbon Labels for Coffee
     slug: traceability-carbon-labels-coffee
+    description: Traceability and carbon labels are becoming inevitable — explore the role of GIS and QR codes in sustainable coffee supply chains.

@@ -18,6 +18,8 @@ navId: "articles"
 
 <div class="content">
 
+<img src="/assets/img/product/giai-phap-gan-nhan-carbon-ca-phe/carbon-label-coffee-1.png" alt="Dấu chân carbon cho cà phê Việt Nam" class="responsive" style="max-width: 800px; width: 100%; display: block; margin: 0 auto 24px;">
+
 <p>Trong những năm gần đây, khái niệm <strong>dấu chân carbon (carbon footprint)</strong> ngày càng được nhắc đến nhiều trong thương mại quốc tế. Đây là chỉ số đo lường tổng lượng khí nhà kính phát thải trong suốt vòng đời của một sản phẩm – từ sản xuất, chế biến đến vận chuyển và tiêu thụ.</p>
 
 <p>Đối với ngành cà phê Việt Nam, dấu chân carbon không còn là khái niệm xa vời mà đang trở thành một yêu cầu thực tế. Các thị trường lớn như châu Âu hay Bắc Mỹ ngày càng ưu tiên các sản phẩm có thông tin minh bạch về môi trường, đặc biệt trong bối cảnh các chính sách như <strong>CBAM</strong> hay tiêu chuẩn ESG được áp dụng rộng rãi.</p>

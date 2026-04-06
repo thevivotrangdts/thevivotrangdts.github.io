@@ -18,6 +18,8 @@ navId: "articles"
 
 <div class="content">
 
+<img src="/assets/img/product/giai-phap-gan-nhan-carbon-ca-phe/carbon-label-coffee-3.png" alt="Truy xuất nguồn gốc và nhãn carbon cà phê xuất khẩu" class="responsive" style="max-width: 800px; width: 100%; display: block; margin: 0 auto 24px;">
+
 <p>Ngành cà phê toàn cầu đang chuyển dịch mạnh mẽ theo hướng minh bạch và bền vững. Trong đó, <strong>truy xuất nguồn gốc và nhãn carbon</strong> đang trở thành hai yếu tố song hành, đặc biệt đối với các thị trường cao cấp.</p>
 
 <p>Người mua không chỉ quan tâm đến chất lượng sản phẩm, mà còn muốn biết cà phê được trồng ở đâu, quy trình sản xuất ra sao và mức phát thải môi trường như thế nào. Điều này khiến các doanh nghiệp buộc phải đầu tư vào hệ thống dữ liệu và công nghệ.</p>
