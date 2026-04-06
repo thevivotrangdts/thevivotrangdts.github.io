@@ -36,7 +36,7 @@ navId: "services"
 <img src="/assets/img/product/thu-thap-du-lieu-mat-dat/thu-thap-du-lieu-mat-dat-6.webp" alt="Data Collection Software" class="responsive">
 <p>Finally, the company is capable of building a cross-platform <strong>ground data collection</strong> application (Android, iOS). This software will help field collectors perform their work conveniently. Through this tool, we can limit the fields and types of information that can be collected, thereby reducing errors in the field. Thanks to a consistent data structure, quality control is carried out more efficiently and accurately.</p>
 <br>
-<p>For more information about the <strong>Ground Data Collection</strong> service, please <a href="../index.html#contact">contact us</a>.</p>
+<p>For more information about the <strong>Ground Data Collection</strong> service, please <a href="/en/index.html#contact">contact us</a>.</p>
 </div>
 
 </div>

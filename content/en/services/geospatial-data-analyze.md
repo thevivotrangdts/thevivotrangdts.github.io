@@ -33,7 +33,7 @@ navId: "services"
 <img src="/assets/img/product/thu-thap-du-lieu-khoa-hoc/thu-thap-du-lieu-khoa-hoc-5.webp" alt="Geospatial consulting and decision support" class="responsive">
 <p>With a team of geospatial specialists, GDTS goes beyond data processing to provide analytical consulting services. We work alongside clients to identify the most appropriate analysis methods, interpret results, and apply geospatial insights to strategic decisions — from raw material zone planning and natural disaster risk assessment to logistics optimization.</p>
 <br>
-<p>For more information about the <strong>Geospatial Data Analyze</strong> service, please <a href="../index.html#contact">contact us</a>.</p>
+<p>For more information about the <strong>Geospatial Data Analyze</strong> service, please <a href="/en/index.html#contact">contact us</a>.</p>
 </div>
 
 </div>

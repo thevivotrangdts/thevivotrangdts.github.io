@@ -36,7 +36,7 @@ navId: "services"
 <img src="/assets/img/product/thu-thap-du-lieu-khoa-hoc/thu-thap-du-lieu-khoa-hoc-6.webp" alt="Data Collection Software" class="responsive">
 <p>Finally, the company is capable of building a cross-platform ground data collection application (Android, iOS). This software will help field collectors perform their work conveniently. Through this tool, we can limit the fields and types of information that can be collected. In addition, we will always remind collectors of the collection procedure to minimize errors in the field.</p>
 <br>
-<p>For more information about the <strong>Scientific Data Collection</strong> service, please <a href="../index.html#contact">contact us</a>.</p>
+<p>For more information about the <strong>Scientific Data Collection</strong> service, please <a href="/en/index.html#contact">contact us</a>.</p>
 </div>
 
 </div>

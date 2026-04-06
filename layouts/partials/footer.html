@@ -2,9 +2,10 @@
 {{- $c        := hugo.Data.contact }}
 {{- $services := hugo.Data.services }}
 
-{{- $homeHref  := cond (eq $lang "en") "/en/index.html"  "/index.html" }}
-{{- $aboutHref := cond (eq $lang "en") "/en/about.html"  "/about.html" }}
+{{- $homeHref  := cond (eq $lang "en") "/en/index.html"         "/index.html" }}
+{{- $aboutHref := cond (eq $lang "en") "/en/about.html"          "/about.html" }}
 {{- $svcHref   := cond (eq $lang "en") "/en/index.html#featured-services" "/index.html#featured-services" }}
+{{- $artHref   := cond (eq $lang "en") "/en/articles/index.html" "/bai-viet/index.html" }}
 
 {{- if eq $lang "en" }}
   {{- $usefulLinksLabel := "Useful Links" }}
@@ -48,6 +49,9 @@
             </li>
             <li><i class="bx bx-chevron-right"></i>
               <a href="{{ $svcHref }}">{{ if eq $lang "en" }}Services{{ else }}Dịch vụ{{ end }}</a>
+            </li>
+            <li><i class="bx bx-chevron-right"></i>
+              <a href="{{ $artHref }}">{{ if eq $lang "en" }}Articles{{ else }}Bài viết{{ end }}</a>
             </li>
           </ul>
         </div>

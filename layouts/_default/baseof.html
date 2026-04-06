@@ -20,8 +20,31 @@
   <link href="/assets/img/gdts.png" rel="shortcut icon">
   <link href="/assets/img/gdts.png" rel="image_src">
 
+  <!-- Vendor CSS -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
   <!-- Main CSS -->
   <link href="/assets/css/style.css" rel="stylesheet">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:title" content="{{ .Title }} - GDTS">
+  <meta property="og:description" content="{{ .Params.description | default .Site.Params.description }}">
+  <meta property="og:image" content="https://gdts.vn/assets/img/hero-bg.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }} - GDTS">
+  <meta name="twitter:description" content="{{ .Params.description | default .Site.Params.description }}">
+  <meta name="twitter:image" content="https://gdts.vn/assets/img/hero-bg.webp">
+
+  <!-- Hreflang for multilingual SEO -->
+  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+  {{- range .Translations }}
+  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+  {{- end }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
 </head>
 
 <body>
@@ -38,11 +61,6 @@
   {{ partial "footer.html" . }}
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor CSS -->
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 
   <!-- Vendor JS -->
   <script src="/assets/vendor/jquery/jquery.min.js"></script>

@@ -31,5 +31,5 @@ navId: "services"
 <img src="/assets/img/product/thu-thap-du-lieu-nong-nghiep/thu-thap-du-lieu-nong-nghiep-4.webp" alt="Multispectral được ứng dụng để xác định số lượng cây" class="responsive">
 <p>Máy bay không người lái nói chung và <strong>Multispectral</strong> nói riêng đang dần trở thành cuộc cách mạng hóa cách thức canh tác hàng ngày của nhà nông. Một xu hướng nông nghiệp hóa dựa trên sự hỗ trợ tối ưu của công nghệ đang dần mở ra tại Việt Nam. Hứa hẹn sẽ mang lại lợi ích về nhiều mặt với chi phí thấp nhất mà hiệu quả cao nhất, tạo ra năng suất cao hơn với ít nguyên liệu hơn.</p>
 <br>
-<p>Để được cung cấp thêm thông tin về dịch vụ <strong>Thu thập Dữ liệu Nông nghiệp</strong>, xin vui lòng <a href="../index.html#contact">liên hệ</a>.</p>
+<p>Để được cung cấp thêm thông tin về dịch vụ <strong>Thu thập Dữ liệu Nông nghiệp</strong>, xin vui lòng <a href="/index.html#contact">liên hệ</a>.</p>
 </div>

@@ -31,7 +31,7 @@ navId: "services"
 <img src="/assets/img/product/thu-thap-du-lieu-nong-nghiep/thu-thap-du-lieu-nong-nghiep-4.webp" alt="Multispectral applied to tree counting" class="responsive">
 <p>Drones in general and <strong>Multispectral</strong> in particular are gradually revolutionizing farmers' daily cultivation practices. A technology-driven agricultural trend is steadily emerging in Vietnam, promising to bring benefits across many dimensions at the lowest cost and highest efficiency — producing higher yields with fewer inputs.</p>
 <br>
-<p>For more information about the <strong>Agricultural Data Collection</strong> service, please <a href="../index.html#contact">contact us</a>.</p>
+<p>For more information about the <strong>Agricultural Data Collection</strong> service, please <a href="/en/index.html#contact">contact us</a>.</p>
 </div>
 
 </div>

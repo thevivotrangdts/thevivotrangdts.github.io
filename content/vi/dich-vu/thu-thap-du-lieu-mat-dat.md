@@ -36,5 +36,5 @@ navId: "services"
 <img src="/assets/img/product/thu-thap-du-lieu-mat-dat/thu-thap-du-lieu-mat-dat-6.webp" alt="Phần mềm thu thập dữ liệu" class="responsive">
 <p>Cuối cùng, công ty có khả năng xây dựng ứng dụng <strong>thu thập dữ liệu mặt đất</strong> trên đa nền tảng (Android, iOS). Phần mềm này sẽ hỗ trợ các thu thập viên hiện trường thực hiện công việc một cách thuận tiện. Qua công cụ này, chúng tôi có thể giới hạn các trường và loại thông tin có thể thu thập, do đó sẽ hạn chế sai sót ở thực địa. Nhờ vào sự thống nhất về cấu trúc dữ liệu, quá trình kiểm soát chất lượng được thực hiện hiệu quả và chính xác hơn.</p>
 <br>
-<p>Để được cung cấp thêm thông tin về dịch vụ <strong>Thu thập Dữ liệu Mặt đất</strong>, xin vui lòng <a href="../index.html#contact">liên hệ</a>.</p>
+<p>Để được cung cấp thêm thông tin về dịch vụ <strong>Thu thập Dữ liệu Mặt đất</strong>, xin vui lòng <a href="/index.html#contact">liên hệ</a>.</p>
 </div>
